@@ -1,0 +1,17 @@
+<h1> Welcome To Words Oprations
+</h1>
+
+<h2>You Entered : </h2>
+{{fulltext}}
+
+<h1> Total Number of words are {{ word }}</h1>
+
+<h1> Word Count Repeating Numbers: </h1>
+{% for word, counttotal in worddictionary %}
+{{ word }} - {{ counttotal }}
+<br/>
+
+{% endfor %}
+
+<a href="{% url 'home' %}"> back to home</a>
+<a href="{% url 'about' %}">about us </a>

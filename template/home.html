@@ -1,0 +1,25 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        textarea {
+  background: url(/img.png) center center no-repeat; /* This ruins default border */
+  border: 1px solid #888; 
+}
+
+    </style>
+</head>
+<body>
+    <H1> You can Past paragraph or list of word you want to be oprated </H1>
+
+    <form action="{% url 'Count' %}">
+<textarea cols="50" rows="10" name="fulltext"></textarea>
+<br>
+<input type="submit" value ="count" />
+<a href="{% url 'home' %}"> back to home</a>
+<a href="{% url 'about' %}">about us </a>
+    </form>
+</body>
+</html>
