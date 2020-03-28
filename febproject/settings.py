@@ -23,9 +23,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '*u#gerivf8c3^*j+5s)&#9p5^+^3&4yhr1ij7-3k&=qh*1kjls'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['https://wordsplay-root.herokuapp.com/', '127.0.0.1']
 
 
 # Application definition
