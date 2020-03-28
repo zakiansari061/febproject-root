@@ -2,24 +2,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        textarea {
-  background: url(/img.png) center center no-repeat; /* This ruins default border */
-  border: 1px solid #888; 
-}
-
+    <title>Words Operation</title>
+    <style> 
+       
     </style>
 </head>
 <body>
-    <H1> You can Past paragraph or list of word you want to be oprated </H1>
-
-    <form action="{% url 'Count' %}">
-<textarea cols="50" rows="10" name="fulltext"></textarea>
-<br>
-<input type="submit" value ="count" />
-<a href="{% url 'home' %}"> back to home</a>
-<a href="{% url 'about' %}">about us </a>
+    <link rel ="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+        <ul class="nav justify-content-end">
+            <li class="nav-item">
+          <a class="nav-link active" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+          <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+          <a class="nav-link" href="#">Account</a>
+            </li>
+            <li class="nav-item">
+          <a class="nav-link disabled" href="#">Loggout</a>
+            </li>
+      </ul>
+    </nav>
+    <h1> Welcome To WordsPlay Projects </h1>
+    
+    <form action ="{% url 'count' %}">
+        <textarea cols="40" rows="10" name="fulltext"></textarea><br><br> 
+        <input type="submit" value="Count!" />
+        <input type="submit" value="capital!"/>
     </form>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    
 </body>
 </html>
